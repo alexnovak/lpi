@@ -1,0 +1,2 @@
+The segment in question is uninitialized. When the program is loaded into memory, 
+then an allocation is made.

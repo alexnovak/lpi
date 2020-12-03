@@ -1,0 +1,4 @@
+Huh, looks like it still gets appended.
+Poking at the man page for open, we can see that O_APPEND repositions the file offset
+to the end of the file before each write. The modification of offset and write are 
+in the same atomic step. So however we modified the offset before wouldn't matter.
